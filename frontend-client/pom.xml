@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
-		<groupId>org.springframework.samples</groupId>
-		<artifactId>spring-petclinic-angular1</artifactId>
+		<groupId>io.hexaforce</groupId>
+		<artifactId>petclinic</artifactId>
 		<version>2.0.3</version>
 	</parent>
-	
-	<artifactId>spring-petclinic-client</artifactId>
+
+	<artifactId>frontend-client</artifactId>
 	<name>Spring Petclinic :: AngularJS Client</name>
 
 	<properties>
@@ -17,7 +19,6 @@
 	</properties>
 
 	<build>
-
 		<resources>
 			<resource>
 				<directory>${project.build.directory}/dist</directory>
@@ -26,7 +27,6 @@
 				<directory>${basedir}/bower_components</directory>
 			</resource>
 		</resources>
-
 		<plugins>
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
@@ -67,7 +67,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -75,7 +74,6 @@
 					<outputDirectory>${project.build.directory}/classes/public/</outputDirectory>
 				</configuration>
 			</plugin>
-
 		</plugins>
 	</build>
 </project>
